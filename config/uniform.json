@@ -1,0 +1,19 @@
+{
+    "input": "dataset/uniform.csv",
+    "output": "anonymized/uniform.csv",
+    "quasiid_columns": ["col1", "col2", "col3"],
+    "sensitive_columns": ["sens_col"],
+    "column_score": "span",
+    "K": 100,
+    "L": 2,
+    "quasiid_generalizations": [
+        {
+	    "qi_name": "col2",
+	    "generalization_type": "common_prefix",
+	    "params": {
+		"hide-mark": "+"
+	    }
+	}
+    ],
+    "measures": ["discernability_penalty", "normalized_certainty_penalty", "global_certainty_penalty"]
+}

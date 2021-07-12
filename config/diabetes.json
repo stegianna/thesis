@@ -1,0 +1,19 @@
+{
+	"input": "dataset/diabetes.csv",
+	"output": "anonymized/diabetes.csv",
+    "quasiid_columns": ["Pregnancies","BloodPressure"],
+    "sensitive_columns": ["Outcome"],
+    "column_score": "neg_entropy",
+    "K": 100,
+    "L": 2,
+    "quasiid_generalizations": [
+		{
+			"qi_name": "Pregnancies",
+			"generalization_type": "common_prefix",
+			"params": {
+				"hide-mark": "+"
+			}
+		}
+    ],
+    "measures": ["discernability_penalty", "normalized_certainty_penalty", "global_certainty_penalty"]
+}
