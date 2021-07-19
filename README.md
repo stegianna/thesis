@@ -1,6 +1,6 @@
 # Thesis
 
-Repository containing the relevant files for the master's thesis project at UNIBG.
+Repository containing the relevant files for the master's thesis project entitled *Clustering-based Mondrian partitioning* at UNIBG.
 
 The folders included in this repo contain the most relevant files development of the thesis project.
 
